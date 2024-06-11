@@ -14,10 +14,6 @@ import com.example.myapplication.network.User
 
 class ThirdScreenViewModel(userRepository: UserRepository) : ViewModel() {
 
-    init {
-        println("ThirdScreenViewModel initialized")
-    }
-
     val user: LiveData<PagingData<User>> =
         userRepository.getUser().cachedIn(viewModelScope)
 }

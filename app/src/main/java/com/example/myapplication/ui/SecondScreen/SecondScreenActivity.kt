@@ -37,7 +37,6 @@ class SecondScreenActivity : AppCompatActivity() {
         }
 
         var selectedName = intent.getStringExtra("USER_NAME_2")
-        println(selectedName)
         selectedName = if (selectedName.isNullOrEmpty()){
             "Selected User Name"
         } else {
